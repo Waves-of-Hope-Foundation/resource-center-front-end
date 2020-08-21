@@ -17,7 +17,7 @@ body {
 	font-family: 'Roboto', sans-serif;
 }
 
-h1, h2 {
+h1, h2, legend {
 	font-family: 'Rubik', sans-serif;
 }
 
@@ -66,12 +66,9 @@ h1 {
 	display: block;
 }
 
-.right-align {
+.submit {
 	float: right;
-}
-
-.alt-action {
-	margin-top: 1.2rem;
+	margin-right: 0.2rem;
 }
 
 /* end of Main section styles */
