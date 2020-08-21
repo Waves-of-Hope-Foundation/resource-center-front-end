@@ -20,55 +20,55 @@
 
   <body>
     <!-- Navigation bar -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-blue">
-		  <div class="container">
-		  	<a class="navbar-brand mr-md-5" href="">Waves Resource Center</a>
+    <nav class="navbar navbar-expand-md navbar-dark bg-blue fixed-top">
+      <div class="container">
+        <a class="navbar-brand mr-md-5" href="">Waves Resource Center</a>
 
-			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
-			  	<!-- Default hamburger icon replaced with font awesome's -->
-			    <!-- <span class="navbar-toggler-icon"></span> -->
-			    <i class="fas fa-bars"></i>
-			  </button>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+          <!-- Default hamburger icon replaced with font awesome's -->
+          <!-- <span class="navbar-toggler-icon"></span> -->
+          <i class="fas fa-bars"></i>
+        </button>
 
-			  <div class="collapse navbar-collapse" id="navbarToggle">
-			  	<!-- TO DO -->
-			  	<!-- Add the .active to the link of current active page -->
-			    <ul class="navbar-nav mr-auto">
-			      <li class="nav-item">
-			        <a class="nav-link" href="#">Spiritual Resources</a>
-			      </li>
+        <div class="collapse navbar-collapse" id="navbarToggle">
+          <!-- TO DO -->
+          <!-- Add the .active to the link of current active page -->
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Spiritual Resources</a>
+            </li>
 
-			      <li class="nav-item">
-			        <a class="nav-link" href="#">Economic Resources</a>
-			      </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Economic Resources</a>
+            </li>
 
-			      <li class="nav-item">
-			        <a class="nav-link" href="#">Reports</a>
-			      </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Reports</a>
+            </li>
 
-			      <li class="nav-item">
-			        <a class="nav-link" href="#">Events</a>
-			      </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Events</a>
+            </li>
 
-			      <li class="nav-item">
-			        <a class="nav-link" href="#">Gallery</a>
-			      </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Gallery</a>
+            </li>
 
-			      <li class="nav-item dropdown">
-			        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-			          Account
-			        </a>
-			        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-			          <img class="nav-profile-pic" src="static/images/waves-logo-220x220.jpg" alt="User's profile picture">
-			          <div class="dropdown-divider"></div>
-			          <a class="dropdown-item" href="#">Logout</a>
-			          <a class="dropdown-item" href="#">Profile</a>
-			        </div>
-			      </li>
-			    </ul>
-			  </div>
-		  </div>
-		</nav>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Account
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <img class="nav-profile-pic" src="static/images/waves-logo-220x220.jpg" alt="User's profile picture">
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Logout</a>
+                <a class="dropdown-item" href="#">Profile</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
 		<!-- Main content -->
 		<main>
@@ -82,30 +82,30 @@
 				  
 				  <!-- Call to action -->
 				  <div class="homepage-cta">
-				  	<a class="btn btn-success btn-lg float-left" href="#" role="button">Register</a>
-				  	<a class="btn btn-success btn-lg float-right" href="#" role="button">Login</a>
+				  	<a class="btn btn-success btn-lg float-left" href="register.html" role="button">Register</a>
+				  	<a class="btn btn-success btn-lg float-right" href="login.html" role="button">Login</a>
 				  </div>
 			  </div>
 			</div>
 
-			<div class="container text-center my-3">
+			<div class="container text-center my-3 site-stat">
 			  <div class="row">
 			    <div class="col-sm">
-			    	<span class="site-stat">20</span>
-			      <i class="fas fa-book-open fa-3x"></i>
-			      <span class="site-stat-label">Books</span>
+			    	<span class="block">20</span>
+			      <i class="fas fa-book-open"></i>
+			      <span class="block">Books</span>
 			    </div>
 
 			    <div class="col-sm">
-			    	<span class="site-stat">13</span>
-			      <i class="fas fa-video fa-3x"></i>
-			      <span class="site-stat-label">Videos</span>
+			    	<span class="block">13</span>
+			      <i class="fas fa-video"></i>
+			      <span class="block">Videos</span>
 			    </div>
 
 			    <div class="col-sm">
-			    	<span class="site-stat">25</span>
-			      <i class="fas fa-users fa-3x"></i>
-			      <span class="site-stat-label">Members</span>
+			    	<span class="block">25</span>
+			      <i class="fas fa-users"></i>
+			      <span class="block">Members</span>
 			    </div>
 			  </div>
 			</div>
@@ -113,7 +113,7 @@
 		</main>
 
 		<!-- Footer -->
-		<footer>
+		<footer class="footer">
 		  <!-- Copyright -->
 		  <div class="text-center py-3">
 				&copy;
