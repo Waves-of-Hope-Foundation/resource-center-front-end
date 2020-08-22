@@ -1,39 +1,86 @@
 /* Fonts */
-/*@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,500;0,700;0,900;1,500;1,700;1,900&display=swap');*/
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,500;0,700;1,500;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
 
+/* end of Fonts */
+
+
 /* General styles*/
+html {
+	position: relative;
+	min-height: 100%;
+}
+
 body {
 	background-color: #F8F9F9;
 	color: #333333;
 	font-family: 'Roboto', sans-serif;
 }
 
-h1, h2 {
+main {
+	margin-bottom: 60px;
+	padding: 10px 0;
+}
+
+h1, h2, legend {
 	font-family: 'Rubik', sans-serif;
 }
 
-a {
-	color: rgba(250, 250, 250, 0.6);
+form {
+	padding: 1rem 0 2rem;
 }
 
-a:hover {
-	color: rgba(250, 250, 250, 0.8);
+.account-img {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	margin-right: 2em;
 }
+
+/* end of General styles */
+
 
 /* Navbar styles */
 .bg-blue {
 	background-color: #1F618D;
 }
 
-.nav-profile-pic {
-	width: 180px;
-	border-radius: 50%;
-	margin: 0 15px;
+/* end of Navbar styles */
+
+
+/* Main section styles */
+h1 {
+	color: #34495E;
 }
 
-/* Main section styles*/
+.tagline {
+  	color: #EAECEE;
+}
+
+.homepage-cta {
+    max-width: 300px;
+    padding: 0 30px;
+    margin: 30px auto;
+}
+
+.site-stat {
+	font-size: 3rem;
+	font-weight: 300;
+}
+
+.block {
+	display: block;
+}
+
+.submit {
+	float: right;
+	margin-right: 0.2rem;
+}
+
+/* end of Main section styles */
+
+
+/* Jumbotron styles */
 .jumbotron {
 	/* Image location*/
 	background-image: url(../images/book-on-table-1920x1440.jpg);
@@ -64,38 +111,25 @@ a:hover {
   }
 }
 
-h1 {
-	color: #34495E;
-}
+/* end of Jumbotron styles */
 
-.tagline {
-  	color: #EAECEE;
-}
-
-.homepage-cta {
-    max-width: 300px;
-    padding: 0 30px;
-    margin: 30px auto;
-}
-
-.btn-cta {
-	background-color: #34495E;
-}
-
-.site-stat {
-	font-size: 3.5em;
-	display: block;
-}
-
-.site-stat-label {
-	font-size: 3em;
-	font-weight: 200;
-	display: block;
-}
 
 /* Footer styles */
 footer {
-	height: 70px;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
 	background-color: #1B4F72;
 	color: #E5E7E9;
 }
+
+footer a {
+	color: rgba(250, 250, 250, 0.6);
+}
+
+footer a:hover {
+	color: rgba(250, 250, 250, 0.8);
+}
+
+/* end of Footer styles */
