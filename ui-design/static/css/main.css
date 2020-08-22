@@ -17,8 +17,17 @@ body {
 	font-family: 'Roboto', sans-serif;
 }
 
+main {
+	margin-bottom: 60px;
+	padding: 10px 0;
+}
+
 h1, h2, legend {
 	font-family: 'Rubik', sans-serif;
+}
+
+form {
+	padding: 1rem 0 2rem;
 }
 
 .account-img {
@@ -40,11 +49,6 @@ h1, h2, legend {
 
 
 /* Main section styles */
-main {
-	margin-bottom: 2rem;
-	padding: 2rem 0 4rem;
-}
-
 h1 {
 	color: #34495E;
 }
@@ -111,7 +115,6 @@ h1 {
 
 
 /* Footer styles */
-
 footer {
 	position: absolute;
 	bottom: 0;
