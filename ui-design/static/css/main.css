@@ -1,5 +1,5 @@
 /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,500;0,700;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
 
 /* end of Fonts */
@@ -19,11 +19,16 @@ body {
 
 main {
 	margin-bottom: 60px;
-	padding: 10px 0;
+	padding: 15px 0;
+}
+
+main nav {
+	margin: 2rem 0;
 }
 
 h1, h2, legend {
 	font-family: 'Rubik', sans-serif;
+	margin: 1.2rem 0;
 }
 
 form {
@@ -35,6 +40,10 @@ form {
 	height: 150px;
 	border-radius: 50%;
 	margin-right: 2em;
+}
+
+time {
+	color: grey;
 }
 
 /* end of General styles */
@@ -49,10 +58,6 @@ form {
 
 
 /* Main section styles */
-h1 {
-	color: #34495E;
-}
-
 .tagline {
   	color: #EAECEE;
 }
@@ -75,6 +80,14 @@ h1 {
 .submit {
 	float: right;
 	margin-right: 0.2rem;
+}
+
+.card-deck {
+	margin-top: 1.2rem;
+}
+
+.book {
+	max-width: 540px;
 }
 
 /* end of Main section styles */
@@ -109,6 +122,10 @@ h1 {
     /* The file size of this background image issmallerto improve page load speed on mobile internet connections */
     background-image: url(../images/book-on-table-640x480.jpg);
   }
+}
+
+.jumbotron h1 {
+	color: #34495E;
 }
 
 /* end of Jumbotron styles */
