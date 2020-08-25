@@ -1,5 +1,4 @@
 /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,500;0,700;1,500;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
 
 /* end of Fonts */
@@ -18,12 +17,16 @@ body {
 }
 
 main {
-	margin-bottom: 60px;
-	padding: 10px 0;
+	margin: 40px 0 60px;
+	padding: 15px 0;
+}
+
+main nav {
+	margin: 2rem 0;
 }
 
 h1, h2, legend {
-	font-family: 'Rubik', sans-serif;
+	margin: 1.2rem 0;
 }
 
 form {
@@ -35,6 +38,11 @@ form {
 	height: 150px;
 	border-radius: 50%;
 	margin-right: 2em;
+}
+
+section header {
+	font-size: 1.8em;
+	font-weight: 500;
 }
 
 /* end of General styles */
@@ -49,10 +57,6 @@ form {
 
 
 /* Main section styles */
-h1 {
-	color: #34495E;
-}
-
 .tagline {
   	color: #EAECEE;
 }
@@ -64,7 +68,7 @@ h1 {
 }
 
 .site-stat {
-	font-size: 3rem;
+	font-size: 3em;
 	font-weight: 300;
 }
 
@@ -75,6 +79,15 @@ h1 {
 .submit {
 	float: right;
 	margin-right: 0.2rem;
+}
+
+.card-deck {
+	margin-top: 1.2rem;
+}
+
+.card h2 {
+	font-size: 1.4em;
+	margin: 5px;
 }
 
 /* end of Main section styles */
@@ -104,11 +117,20 @@ h1 {
     margin: 0;
 }
 
-@media only screen and (max-width: 767px) {
-  .jumbotron {
-    /* The file size of this background image issmallerto improve page load speed on mobile internet connections */
-    background-image: url(../images/book-on-table-640x480.jpg);
+@media only screen and (max-width: 992px) {
+	.jumbotron {
+	  background-image: url(../images/book-on-table-large-portrait.jpg);
+	}
   }
+
+@media only screen and (max-width: 768px) {
+  .jumbotron {
+    background-image: url(../images/book-on-table-portrait.jpg);
+  }
+}
+
+.jumbotron h1 {
+	color: #34495E;
 }
 
 /* end of Jumbotron styles */
