@@ -1,5 +1,4 @@
 /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
 
 /* end of Fonts */
@@ -18,7 +17,7 @@ body {
 }
 
 main {
-	margin-bottom: 60px;
+	margin: 40px 0 60px;
 	padding: 15px 0;
 }
 
@@ -27,7 +26,6 @@ main nav {
 }
 
 h1, h2, legend {
-	font-family: 'Rubik', sans-serif;
 	margin: 1.2rem 0;
 }
 
@@ -42,8 +40,9 @@ form {
 	margin-right: 2em;
 }
 
-time {
-	color: grey;
+section header {
+	font-size: 1.8em;
+	font-weight: 500;
 }
 
 /* end of General styles */
@@ -69,7 +68,7 @@ time {
 }
 
 .site-stat {
-	font-size: 3rem;
+	font-size: 3em;
 	font-weight: 300;
 }
 
@@ -86,8 +85,9 @@ time {
 	margin-top: 1.2rem;
 }
 
-.book {
-	max-width: 540px;
+.card h2 {
+	font-size: 1.4em;
+	margin: 5px;
 }
 
 /* end of Main section styles */
@@ -117,10 +117,15 @@ time {
     margin: 0;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 992px) {
+	.jumbotron {
+	  background-image: url(../images/book-on-table-large-portrait.jpg);
+	}
+  }
+
+@media only screen and (max-width: 768px) {
   .jumbotron {
-    /* The file size of this background image issmallerto improve page load speed on mobile internet connections */
-    background-image: url(../images/book-on-table-640x480.jpg);
+    background-image: url(../images/book-on-table-portrait.jpg);
   }
 }
 
