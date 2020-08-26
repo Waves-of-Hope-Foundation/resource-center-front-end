@@ -40,11 +40,6 @@ form {
 	margin-right: 2em;
 }
 
-section header {
-	font-size: 1.8em;
-	font-weight: 500;
-}
-
 /* end of General styles */
 
 
@@ -99,6 +94,28 @@ section header {
 	max-width: 22rem;
 }
 
+.video-player {
+	min-height: 600px;
+}
+
+@media only screen and (max-width: 992px) {
+	.video-player {
+		min-height: 450px;
+	}
+}
+
+@media only screen and (max-width: 576px) {
+	.video-player {
+		min-height: auto;
+	}
+}
+
+.summary-title {
+	color: #0056b3;
+	font-size: 1.4em;
+	font-weight: 500;
+}
+
 /* end of Main section styles */
 
 
@@ -118,8 +135,7 @@ section header {
 	.jumbotron h1 {
 		margin: 0.5rem;
 	}
-  }
-
+}
 
 .jumbotron strong {
 	color: aqua;
