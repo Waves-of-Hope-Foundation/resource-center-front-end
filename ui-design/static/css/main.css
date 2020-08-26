@@ -40,6 +40,11 @@ form {
 	margin-right: 2em;
 }
 
+section header {
+	font-size: 1.8em;
+	font-weight: 500;
+}
+
 /* end of General styles */
 
 
@@ -148,6 +153,10 @@ form {
 
 .jumbotron em {
 	font-weight: 500;
+}
+
+.jumbotron h1 {
+	color: #34495E;
 }
 
 /* end of Jumbotron styles */
