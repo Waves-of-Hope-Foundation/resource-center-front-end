@@ -78,7 +78,7 @@
     <main class="container">
       <div class="container col-md-6">
         <div class="alert alert-success my-4">
-          Your profile has been updated.
+          Your profile has been successfully updated.
           <button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -87,48 +87,48 @@
 
       <div class="media container col-md-6 mt-3">
         <img class="align-self-center account-img" src="static/images/default.png" alt="User's profile picture">
-    
+
         <div class="media-body mt-4">
           <h2>User</h2>
           <p class="text-secondary">email@example.com</p>
         </div>
       </div>
-    
-      <form class="container col-md-6">
+
+      <form id="profile_form" class="container col-md-6">
         <fieldset>
           <legend class="border-bottom">Profile info</legend>
-    
+
           <div class="form-group">
-            <label for="firstName">John</label>
+            <label for="firstName">First name</label>
             <input type="text" class="form-control" id="firstName" value="John">
           </div>
-    
+
           <div class="form-group">
-            <label for="lastName">Doe</label>
+            <label for="lastName">Last name</label>
             <input type="text" class="form-control" id="lastName" value="Doe">
           </div>
-    
+
           <div class="form-group">
             <label for="username">Username</label>
-            <input type="text" class="form-control" id="username" value="Username">
+            <input type="text" class="form-control" id="username" value="johndoe">
           </div>
-    
+
           <div class="form-group">
             <label for="email">Email address</label>
             <input type="email" class="form-control" id="email" value="email@example.com">
           </div>
-    
+
           <div class="form-group">
             <label for="phoneNumber">Phone number</label>
             <input type="text" class="form-control" id="phoneNumber" value="+254 0110 000 000">
           </div>
-    
+
           <div class="form-group">
             <label for="bio">Bio</label>
             <textarea class="form-control" id="bio" rows="3" aria-describedby="bioHelp"></textarea>
             <p id="bioHelp" class="form-text text-muted">Enter a brief summary of yourself</p>
           </div>
-    
+
           <div class="form-group">
             <label for="profilePic">Profile picture</label>
             <p>
@@ -141,7 +141,7 @@
             </p>
           </div>
         </fieldset>
-    
+
         <div class="form-group">
           <button type="submit" class="btn btn-outline-success submit">Update</button>
         </div>

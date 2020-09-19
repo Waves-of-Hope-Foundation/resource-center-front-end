@@ -31,7 +31,7 @@
 
     <!-- Main content -->
     <main class="container">
-      <form class="container col-md-6">
+      <form id="register_form" class="container col-md-6">
         <fieldset>
           <legend class="border-bottom mb-4">Register</legend>
 
@@ -42,20 +42,22 @@
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          
+
           <div class="form-group">
-            <label for="username">Username</label>
-            <input type="text" class="form-control" id="username" aria-describedby="usernameHelp">
-            <p id="usernameHelp" class="form-text text-muted">
-              Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.
-            </p>
+            <label for="firstName">First name</label>
+            <input type="text" class="form-control" id="firstName">
           </div>
-    
+
+          <div class="form-group">
+            <label for="lastName">Last name</label>
+            <input type="text" class="form-control" id="lastName">
+          </div>
+
           <div class="form-group">
             <label for="email">Email address</label>
             <input type="email" class="form-control" id="email">
           </div>
-    
+
           <div class="form-group">
             <label for="phoneNumber">Phone number</label>
             <input type="text" class="form-control" id="phoneNumber" aria-describedby="phoneNumberHelp">
@@ -63,7 +65,7 @@
               Enter a valid phone number
             </p>
           </div>
-    
+
           <div class="form-group">
             <label for="password">Password</label>
             <input type="password" class="form-control" id="password" aria-describedby="passwordHelp">
@@ -74,18 +76,18 @@
               <li>Your password can’t be entirely numeric.</li>
             </ul>
           </div>
-    
+
           <div class="form-group">
             <label for="passwordConfirmation">Password confirmation</label>
             <input type="password" class="form-control" id="passwordConfirmation">
           </div>
-    
+
           <div class="form-group">
             <button type="submit" class="btn btn-success submit">Register</button>
           </div>
         </fieldset>
       </form>
-    
+
       <div class="container col-md-6 border-top pt-2">
         <p>
           Already have an account?
