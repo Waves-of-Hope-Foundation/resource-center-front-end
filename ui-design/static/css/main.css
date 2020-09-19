@@ -108,6 +108,7 @@ form {
 
 .video-player {
 	min-height: 600px;
+	border: 0rem;
 }
 
 .resource-meta {
