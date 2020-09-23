@@ -115,16 +115,16 @@ form {
 	line-height: 2rem;
 }
 
-.tags {
+.m2m-attribute {
 	margin-left: -2.2rem;
 }
 
-.tag {
-	margin-right: 0.5rem;
+.m2m-attribute a {
+	margin-left: 0.5rem;
 }
 
 .icon {
-	margin-right: 1.2rem;
+	margin-right: 0.6rem;
 }
 
 @media only screen and (max-width: 992px) {
