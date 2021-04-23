@@ -2,33 +2,51 @@
 layout: default
 ---
 
-<div class="home">
-  {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
+<main>
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container text-center">
+      <h1 class="display-4">
+        Be Empowered <strong class="highlight">Today</strong> For <strong class="highlight">Free</strong>
+      </h1>
+      <p class="lead">
+        Find books, videos and opportunities that will <em>change your life forever</em>
+      </p>
+      
+      <!-- Call to action -->
+      <div class="homepage-cta">
+        <a class="btn btn-success btn-lg float-left" href="register.html" role="button">Register</a>
+        <a class="btn btn-success btn-lg float-right" href="login.html" role="button">Login</a>
+      </div>
+    </div>
+  </div>
 
-  {{ content }}
+  <div class="container text-center my-3 site-stat">
+    <div class="row">
+      <div class="col-sm">
+        <ul class="unstyled-list">
+          <li>20</li>
+          <li><i class="fas fa-book-open"></i></li>
+          <li>Books</li>
+        </ul>
+      </div>
+      <div class="col-sm">
+        <ul class="unstyled-list">
+          <li>13</li>
+          <li><i class="fas fa-video"></i></li>
+          <li>Videos</li>
+        </ul>
+      </div>
+      <div class="col-sm">
+        <ul class="unstyled-list">
+          <li>25</li>
+          <li><i class="fas fa-users"></i></li>
+          <li>Members</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
-  {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
-    <ul class="post-list">
-      {%- for post in site.posts -%}
-      <li>
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
-      </li>
-      {%- endfor -%}
-    </ul>
-
-    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
-  {%- endif -%}
-
-</div>
+  <div>
+    {{ content }}
+  </div>
+</main>
